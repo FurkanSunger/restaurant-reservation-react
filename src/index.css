@@ -39,6 +39,14 @@ body {
     background-color: var(--light-color);
 }
 
+.white-bg{
+    background-color: white;
+}
+
+.transparent-bg{
+    background-color: transparent;
+}
+
 .color-primary{
     color: var(--primary-color);
 }
@@ -53,4 +61,8 @@ body {
 
 .color-light{
     color: var(--light-color);
+}
+
+.color-white{
+    color: #ffffff;
 }

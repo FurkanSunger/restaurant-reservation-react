@@ -17,10 +17,13 @@ export const NormalButton = styled.button`
     cursor: pointer;
     background-color: transparent; //propla gelecek
     color: white; //propla gelecek
+    outline: none;
+    border: 1px solid white;
 
     &:hover{
         background-color: white; //propla gelecek
-        color: orange; //propla gelecek
+        color: #E45826; //propla gelecek
+        transition: 0.4s ease;
     }
 `;
 
