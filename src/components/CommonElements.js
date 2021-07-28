@@ -7,6 +7,12 @@ export const LinkButton = styled(Link)`
     font-size: 15px;
     font-weight: 700;
     cursor: pointer;
+    text-decoration: none;
+
+    &:hover {
+        color: white;
+        transition: 0.4s ease;
+    }
 `;
 
 export const NormalButton = styled.button`
@@ -32,7 +38,7 @@ export const SectionTitle = styled.h3`
 `;
 
 export const PrimaryText = styled.p`
-    font-size: 15px;
+    font-size: 17px;
     font-weight: 300;
 `;
 
