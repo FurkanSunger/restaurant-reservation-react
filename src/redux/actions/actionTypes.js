@@ -1,0 +1,5 @@
+export const GETMENU = "GETMENU";
+export const ADDTOMENU = "ADDMENU";
+export const UPDATEMENU = "UPDATEMENU";
+export const DELETEFROMMENU = "DELETEMENU";
+export const GETRESTAURANTINFOS = "GETRESTAURANTINFOS";
