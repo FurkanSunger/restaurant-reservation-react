@@ -1,5 +1,5 @@
 import React from 'react'
-import { AddressLabel, PhoneLabel, SocialMedia, SocialMediaItem, SocialMediaLink } from '../CommonElements'
+import { AddressLabel, PhoneEmailLabel, SocialMedia, SocialMediaItem, SocialMediaLink } from '../CommonElements'
 import { LocationInfos, TopMenuWrapper } from './TopMenu.element'
 import { FaFacebookF, FaInstagram, FaYoutube, FaPinterestP } from "react-icons/fa";
 
@@ -10,7 +10,7 @@ const TopMenu = () => {
                 <LocationInfos>
                     <AddressLabel>Toroslar/Mersin</AddressLabel>
                     <span className="mx-1">|</span>
-                    <PhoneLabel>(546) 937 5480</PhoneLabel>
+                    <PhoneEmailLabel>(546) 937 5480</PhoneEmailLabel>
                 </LocationInfos>
                 <SocialMedia>
                     <SocialMediaItem>

@@ -7,7 +7,7 @@ const Menu = () => {
         <MenuWrapper className="white-bg">
             <div className="container primary-bg p-5">
                 <div className="row">
-                    <div className="col-lg-8">
+                    <div className="col-lg-7">
                         <SectionTitle className="secondary-font color-danger text-center">Let's Discover</SectionTitle>
                         <SectionTitle className="color-light text-center">OUR MENU</SectionTitle>
                         <Categories>
@@ -38,7 +38,7 @@ const Menu = () => {
                         </MenuItems>
                         <LinkButton className="danger-bg color-light">View More</LinkButton>
                     </div>
-                    <div className="col-lg-4 d-flex justify-content-center align-items-center">
+                    <div className="col-lg-5 d-flex justify-content-center align-items-center">
                         <div className="row row-cols-lg-3 g-2">
                             <img className="img-fluid" src="https://cdn.pixabay.com/photo/2017/09/16/19/21/salad-2756467_960_720.jpg" alt="menu-img" />
                             <img className="img-fluid" src="https://cdn.pixabay.com/photo/2017/07/28/14/29/macarons-2548827_960_720.jpg" alt="menu-img" />

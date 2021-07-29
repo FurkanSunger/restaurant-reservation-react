@@ -64,7 +64,7 @@ export const AddressLabel = styled.address`
     margin: 0;
 `;
 
-export const PhoneLabel = styled.span`
+export const PhoneEmailLabel = styled.span`
     font-size: 14px;
     font-weight: 300;
 `;
@@ -74,6 +74,7 @@ export const SocialMedia = styled.ul`
     justify-content: center;
     align-items: center;
     margin: 0;
+    padding: 0;
 `;
 
 export const SocialMediaItem = styled.li`
