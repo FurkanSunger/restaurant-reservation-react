@@ -1,4 +1,6 @@
 import React from 'react'
+import { FaPhoneAlt } from 'react-icons/fa'
+import { GrMail } from 'react-icons/gr'
 import { Input, NormalButton, PhoneEmailLabel, SectionTitle } from '../CommonElements'
 import { AvailableTimesWrapper, BookingWrapper, Days, OpeningTimes, ReservationForm, ReservationWrapper, Times } from './Reservation.element'
 
@@ -26,8 +28,16 @@ const Reservation = () => {
                                 <Days className="secondary-bg">The Weekend</Days>
                             </OpeningTimes>
                             <hr className="color-white" />
-                            <PhoneEmailLabel>(546) 937 5480</PhoneEmailLabel>
-                            <PhoneEmailLabel>furkan.sunger@outlook.com</PhoneEmailLabel>
+                            <div className="d-flex flex-column justify-content-center align-items-start w-100">
+                                <PhoneEmailLabel>
+                                    <FaPhoneAlt className="color-danger" /> - 
+                                    (546) 937 5480
+                                </PhoneEmailLabel>
+                                <PhoneEmailLabel>
+                                    <GrMail className="color-danger" /> - 
+                                    furkan.sunger@outlook.com
+                                </PhoneEmailLabel>
+                            </div>
                         </AvailableTimesWrapper>
                     </div>
                     <div className="col-lg-6">

@@ -21,14 +21,14 @@ export const NormalButton = styled.button`
     font-size: 15px;
     font-weight: 700;
     cursor: pointer;
-    background-color: transparent; //propla gelecek
-    color: white; //propla gelecek
+    background-color: transparent;
+    color: white;
     outline: none;
     border: 1px solid white;
 
     &:hover{
-        background-color: white; //propla gelecek
-        color: #E45826; //propla gelecek
+        background-color: white;
+        color: #E45826;
         transition: 0.4s ease;
     }
 `;

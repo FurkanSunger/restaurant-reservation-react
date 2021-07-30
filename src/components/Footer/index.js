@@ -51,13 +51,13 @@ const Footer = () => {
                                 Useful links
                             </h6>
                             <p>
-                                <Link className="nav-link text-white" to="/">Menu</Link>
+                                <Link className="nav-link text-white" to="/menu">Menu</Link>
                             </p>
                             <p>
-                                <Link className="nav-link text-white" to="/">About</Link>
+                                <Link className="nav-link text-white" to="/about">About</Link>
                             </p>
                             <p>
-                                <Link className="nav-link text-white" to="/">Contact</Link>
+                                <Link className="nav-link text-white" to="/contact">Contact</Link>
                             </p>
                         </div>
                         <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
@@ -74,7 +74,7 @@ const Footer = () => {
                             </p>
                             <p>
                                 <FaPhoneAlt /> - 
-                                + 01 234 567 88
+                                (546) 937 5480
                             </p>
                         </div>
                     </div>

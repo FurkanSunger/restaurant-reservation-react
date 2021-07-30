@@ -13,22 +13,22 @@ const DailySpecial = () => {
                 <div className="row mt-4 text-center">
                     <div className="col-lg-3">
                         <img className="img-fluid rounded-circle mb-2" src="http://demo5.cmsmart.net/wordpress/foody/restaurant/wp-content/uploads/2018/02/img-4.png" alt="special-img" />
-                        <PrimaryText>Special Title</PrimaryText>
+                        <PrimaryText className="fw-bold">Special Title</PrimaryText>
                         <PrimaryText>Special Category</PrimaryText>
                     </div>
                     <div className="col-lg-3">
                         <img className="img-fluid rounded-circle mb-2" src="http://demo5.cmsmart.net/wordpress/foody/restaurant/wp-content/uploads/2018/02/img-4.png" alt="special-img" />
-                        <PrimaryText>Special Title</PrimaryText>
+                        <PrimaryText className="fw-bold">Special Title</PrimaryText>
                         <PrimaryText>Special Category</PrimaryText>
                     </div>
                     <div className="col-lg-3">
                         <img className="img-fluid rounded-circle mb-2" src="http://demo5.cmsmart.net/wordpress/foody/restaurant/wp-content/uploads/2018/02/img-4.png" alt="special-img" />
-                        <PrimaryText>Special Title</PrimaryText>
+                        <PrimaryText className="fw-bold">Special Title</PrimaryText>
                         <PrimaryText>Special Category</PrimaryText>
                     </div>
                     <div className="col-lg-3">
                         <img className="img-fluid rounded-circle mb-2" src="http://demo5.cmsmart.net/wordpress/foody/restaurant/wp-content/uploads/2018/02/img-4.png" alt="special-img" />
-                        <PrimaryText>Special Title</PrimaryText>
+                        <PrimaryText className="fw-bold">Special Title</PrimaryText>
                         <PrimaryText>Special Category</PrimaryText>
                     </div>
                 </div>

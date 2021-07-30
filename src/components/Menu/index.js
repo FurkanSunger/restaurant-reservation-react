@@ -36,10 +36,10 @@ const Menu = () => {
                                 <MenuPrice className="secondary-bg">$15</MenuPrice>
                             </MenuItem>
                         </MenuItems>
-                        <LinkButton className="danger-bg color-light">View More</LinkButton>
+                        <LinkButton to="/menu" className="danger-bg color-light">View More</LinkButton>
                     </div>
                     <div className="col-lg-5 d-flex justify-content-center align-items-center">
-                        <div className="row row-cols-lg-3 g-2">
+                        <div className="row row-cols-lg-3 row-cols-md-3 row-cols-sm-3 row-cols-3 g-2">
                             <img className="img-fluid" src="https://cdn.pixabay.com/photo/2017/09/16/19/21/salad-2756467_960_720.jpg" alt="menu-img" />
                             <img className="img-fluid" src="https://cdn.pixabay.com/photo/2017/07/28/14/29/macarons-2548827_960_720.jpg" alt="menu-img" />
                             <img className="img-fluid" src="https://cdn.pixabay.com/photo/2014/11/05/15/57/salmon-518032_960_720.jpg" alt="menu-img" />

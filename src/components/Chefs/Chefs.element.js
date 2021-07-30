@@ -14,12 +14,13 @@ export const ChefsSliderWrapper = styled.div`
 `;
 
 export const ChefSliderItem = styled.div`
-    display: flex;
+    width: auto !important;
+    display: flex !important;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin: 0 1rem;
+    margin: 1rem;
     border: 1px solid #E45826;
     border-radius: 0.3rem;
 `;

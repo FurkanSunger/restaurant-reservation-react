@@ -3,6 +3,7 @@ import { HeaderSection, HeaderTitle, HeaderWrapper, NavbarSection, TitleGroup } 
 import { NormalButton } from "../CommonElements";
 import foodImg from "../../images/header-food-img.png";
 import Navbar from "../Navbar/index";
+import { FaArrowDown } from "react-icons/fa";
 
 const Header = () => {
     return (
@@ -22,7 +23,9 @@ const Header = () => {
                             <HeaderTitle>The Best Restaurant</HeaderTitle>
                         </TitleGroup>
                     </div>
-                    <NormalButton>Let's Start</NormalButton>
+                    <NormalButton className="rounded p-0">
+                        <a href="#about" className="w-100 h-100 fs-4 p-2 color-white"><FaArrowDown /></a>
+                    </NormalButton>
                 </HeaderSection>
             </div>
         </HeaderWrapper>

@@ -197,6 +197,37 @@
                     "message": "There are no views, but the restaurant is central to the city, cosy, offers a great friendly service, a variety of food choices including healthy ones, a great coffee…all this at a valued price. You exceeded our expectations.",
                     "name": "Tony A."
                 }
+            ],
+
+            "specials": [
+                {
+                    "id": 1,
+                    "name": "Cardamom Maple Salmon",
+                    "price": 18,
+                    "category": "main",
+                    "image": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F1122494.jpg&w=596&h=596&c=sc&poi=face&q=85"
+                },
+                {
+                    "id": 8,
+                    "name": "Buttered Noodles",
+                    "price": 8,
+                    "category": "lunch",
+                    "image": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F2518260.jpg&w=596&h=596&c=sc&poi=face&q=85"
+                },
+                {
+                    "id": 9,
+                    "name": "Strawberry-Rhubarb Buckle",
+                    "price": 5,
+                    "category": "dessert",
+                    "image": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F6614329.jpg&w=596&h=596&c=sc&poi=face&q=85"
+                },
+                {
+                    "id": 14,
+                    "name": "Turkish Orange Salad with Mediterranean Dressing",
+                    "price": 8,
+                    "category": "salad",
+                    "image": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F4560260.jpg&w=596&h=596&c=sc&poi=face&q=85"
+                }
             ]
         }
     ]

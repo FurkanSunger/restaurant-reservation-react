@@ -8,7 +8,7 @@ const TopMenu = () => {
         <TopMenuWrapper className="primary-bg color-light">
             <div className="container d-flex justify-content-between align-items-center">
                 <LocationInfos>
-                    <AddressLabel>Toroslar/Mersin</AddressLabel>
+                    <AddressLabel>Mersin/Turkey</AddressLabel>
                     <span className="mx-1">|</span>
                     <PhoneEmailLabel>(546) 937 5480</PhoneEmailLabel>
                 </LocationInfos>
