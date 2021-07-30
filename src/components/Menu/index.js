@@ -4,7 +4,7 @@ import { Categories, CategoryItem, MenuItem, MenuItems, MenuPrice, MenuTitle, Me
 
 const Menu = () => {
     return (
-        <MenuWrapper className="white-bg">
+        <MenuWrapper className="white-bg" id="menu">
             <div className="container primary-bg p-5">
                 <div className="row">
                     <div className="col-lg-7">

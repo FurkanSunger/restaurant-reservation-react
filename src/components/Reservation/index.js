@@ -39,7 +39,7 @@ const Reservation = () => {
                                 <Input type="tel" name="phone" className="mb-2 w-100" autoComplete="off" placeholder="Phone" />
                                 <Input type="date" name="date" className="mb-2 w-100" min="29-07-2021" />
                                 <Input type="time" name="time" className="mb-2 w-100" />
-                                <Input type="number" name="party" className="mb-3" min="1" placeholder="1" />
+                                <Input type="number" name="party" className="mb-3" min="1" placeholder="Party Size" />
                                 <NormalButton>Book a Table</NormalButton>
                             </ReservationForm>
                         </BookingWrapper>
