@@ -45,7 +45,7 @@ const Contact = () => {
                     </div>
                 </div>
                 <div className="row mt-4">
-                    <img className="img-fluid" src="https://www.zyrgon.com/wp-content/uploads/2019/06/googlemaps-Zyrgon.jpg" alt="map" />
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3193.3487494917626!2d34.61123691490761!3d36.83412287994158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1527f3e5fc3cb3bd%3A0x9518faae87d057c9!2zTWVyc2luLCDDh2HEn2RhxZ9rZW50LCAzMzIzMCBUb3Jvc2xhci9NZXJzaW4!5e0!3m2!1str!2str!4v1627737650890!5m2!1str!2str" width="600" height="450" loading="lazy"></iframe>
                 </div>
             </div>
         </>

@@ -141,14 +141,10 @@
             "image": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F678632.jpg&w=596&h=596&c=sc&poi=face&q=85"
         }
     ],
-
+    
     "restaurant": [
         {
-            "about": [
-                {
-                    "aboutus": "The Restaurant opened in March 2013 in Shoreditch Town Hall, East London. We serve modern British cooking – thoughtful, precise and elegant food in a relaxed and informal setting. The Restaurant opened in March 2013 in Shoreditch Town Hall, East London. We serve modern British cooking – thoughtful, precise and elegant food in a relaxed and informal setting"
-                }
-            ],
+            "about": "The Restaurant opened in March 2013 in Shoreditch Town Hall, East London. We serve modern British cooking – thoughtful, precise and elegant food in a relaxed and informal setting.",
             "chefs": [
                 {
                     "id": 1,
@@ -198,7 +194,6 @@
                     "name": "Tony A."
                 }
             ],
-
             "specials": [
                 {
                     "id": 1,
@@ -227,6 +222,28 @@
                     "price": 8,
                     "category": "salad",
                     "image": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F4560260.jpg&w=596&h=596&c=sc&poi=face&q=85"
+                }
+            ],
+            "categories": [
+                {
+                    "id": 1,
+                    "name": "main"
+                },
+                {
+                    "id": 2,
+                    "name": "lunch"
+                },
+                {
+                    "id": 3,
+                    "name": "dessert"
+                },
+                {
+                    "id": 4,
+                    "name": "salad"
+                },
+                {
+                    "id": 5,
+                    "name": "drink"
                 }
             ]
         }

@@ -1,16 +1,19 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { PrimaryText, SectionTitle, SocialMedia, SocialMediaItem, SocialMediaLink } from '../CommonElements'
 import { FaFacebookF, FaInstagram, FaYoutube, FaPinterestP } from "react-icons/fa";
 import { ChefSliderItem, ChefSocialMediaWrapper, ChefsWrapper } from './Chefs.element';
 import Slider from "react-slick";
+import { bindActionCreators } from 'redux';
+import { fetchRestaurantInfos } from '../../redux/actions/restaurantActions';
+import { connect } from 'react-redux';
 
-const Chefs = () => {
+const Chefs = (props) => {
     const settings = {
         dots: true,
-      infinite: true,
-      speed: 1000,
-      slidesToShow: 4,
-      slidesToScroll: 3,
+        infinite: true,
+        speed: 1000,
+        slidesToShow: 4,
+        slidesToScroll: 3,
         autoplay: true,
         autoplaySpeed: 3000,
         initialSlide: 0,
@@ -41,6 +44,10 @@ const Chefs = () => {
             }
           ]
       };
+
+      useEffect(() => {
+          props.actions.getRestaurant();
+      }, [])
       
     return (
         <ChefsWrapper>
@@ -48,8 +55,10 @@ const Chefs = () => {
                 <SectionTitle className="secondary-font color-danger text-center">Go to Kitchen</SectionTitle>
                 <SectionTitle className="text-center">MEET OUR CHEFS</SectionTitle>
                 <Slider {...settings}>
-                    <ChefSliderItem>
-                        <img src="https://cdn.pixabay.com/photo/2015/08/16/12/38/man-890885_960_720.jpg" alt="chef-img" className="img-fluid rounded" />
+                    {
+                        props.restaurant.map(item => item.chefs.map(chef => (
+                            <ChefSliderItem key={chef.id}>
+                        <img src={chef.image} alt="chef-img" className="img-fluid rounded" />
                         <ChefSocialMediaWrapper>
                             <SocialMedia>
                                 <SocialMediaItem>
@@ -75,169 +84,30 @@ const Chefs = () => {
                             </SocialMedia>
                         </ChefSocialMediaWrapper>
                         <span>
-                            <PrimaryText className="fw-bold">Gordon Ramsey</PrimaryText>
-                            <PrimaryText>Major Chef</PrimaryText>
+                            <PrimaryText className="fw-bold">{chef.fullname}</PrimaryText>
+                            <PrimaryText>{chef.job}</PrimaryText>
                         </span>
                     </ChefSliderItem>
-                    <ChefSliderItem>
-                        <img src="https://cdn.pixabay.com/photo/2015/08/16/12/38/man-890885_960_720.jpg" alt="chef-img" className="img-fluid rounded" />
-                        <ChefSocialMediaWrapper>
-                            <SocialMedia>
-                                <SocialMediaItem>
-                                    <SocialMediaLink className="color-light" href="/">
-                                        <FaFacebookF />
-                                    </SocialMediaLink>
-                                </SocialMediaItem>
-                                <SocialMediaItem>
-                                    <SocialMediaLink className="color-light" href="/">
-                                        <FaInstagram />
-                                    </SocialMediaLink>
-                                </SocialMediaItem>
-                                <SocialMediaItem>
-                                    <SocialMediaLink className="color-light" href="/">
-                                        <FaYoutube />
-                                    </SocialMediaLink>
-                                </SocialMediaItem>
-                                <SocialMediaItem>
-                                    <SocialMediaLink className="color-light" href="/">
-                                        <FaPinterestP />
-                                    </SocialMediaLink>
-                                </SocialMediaItem>
-                            </SocialMedia>
-                        </ChefSocialMediaWrapper>
-                        <span>
-                            <PrimaryText className="fw-bold">Gordon Ramsey</PrimaryText>
-                            <PrimaryText>Major Chef</PrimaryText>
-                        </span>
-                    </ChefSliderItem>
-                    <ChefSliderItem>
-                        <img src="https://cdn.pixabay.com/photo/2015/08/16/12/38/man-890885_960_720.jpg" alt="chef-img" className="img-fluid rounded" />
-                        <ChefSocialMediaWrapper>
-                            <SocialMedia>
-                                <SocialMediaItem>
-                                    <SocialMediaLink className="color-light" href="/">
-                                        <FaFacebookF />
-                                    </SocialMediaLink>
-                                </SocialMediaItem>
-                                <SocialMediaItem>
-                                    <SocialMediaLink className="color-light" href="/">
-                                        <FaInstagram />
-                                    </SocialMediaLink>
-                                </SocialMediaItem>
-                                <SocialMediaItem>
-                                    <SocialMediaLink className="color-light" href="/">
-                                        <FaYoutube />
-                                    </SocialMediaLink>
-                                </SocialMediaItem>
-                                <SocialMediaItem>
-                                    <SocialMediaLink className="color-light" href="/">
-                                        <FaPinterestP />
-                                    </SocialMediaLink>
-                                </SocialMediaItem>
-                            </SocialMedia>
-                        </ChefSocialMediaWrapper>
-                        <span>
-                            <PrimaryText className="fw-bold">Gordon Ramsey</PrimaryText>
-                            <PrimaryText>Major Chef</PrimaryText>
-                        </span>
-                    </ChefSliderItem>
-                    <ChefSliderItem>
-                        <img src="https://cdn.pixabay.com/photo/2015/08/16/12/38/man-890885_960_720.jpg" alt="chef-img" className="img-fluid rounded" />
-                        <ChefSocialMediaWrapper>
-                            <SocialMedia>
-                                <SocialMediaItem>
-                                    <SocialMediaLink className="color-light" href="/">
-                                        <FaFacebookF />
-                                    </SocialMediaLink>
-                                </SocialMediaItem>
-                                <SocialMediaItem>
-                                    <SocialMediaLink className="color-light" href="/">
-                                        <FaInstagram />
-                                    </SocialMediaLink>
-                                </SocialMediaItem>
-                                <SocialMediaItem>
-                                    <SocialMediaLink className="color-light" href="/">
-                                        <FaYoutube />
-                                    </SocialMediaLink>
-                                </SocialMediaItem>
-                                <SocialMediaItem>
-                                    <SocialMediaLink className="color-light" href="/">
-                                        <FaPinterestP />
-                                    </SocialMediaLink>
-                                </SocialMediaItem>
-                            </SocialMedia>
-                        </ChefSocialMediaWrapper>
-                        <span>
-                            <PrimaryText className="fw-bold">Gordon Ramsey</PrimaryText>
-                            <PrimaryText>Major Chef</PrimaryText>
-                        </span>
-                    </ChefSliderItem>
-                    <ChefSliderItem>
-                        <img src="https://cdn.pixabay.com/photo/2015/08/16/12/38/man-890885_960_720.jpg" alt="chef-img" className="img-fluid rounded" />
-                        <ChefSocialMediaWrapper>
-                            <SocialMedia>
-                                <SocialMediaItem>
-                                    <SocialMediaLink className="color-light" href="/">
-                                        <FaFacebookF />
-                                    </SocialMediaLink>
-                                </SocialMediaItem>
-                                <SocialMediaItem>
-                                    <SocialMediaLink className="color-light" href="/">
-                                        <FaInstagram />
-                                    </SocialMediaLink>
-                                </SocialMediaItem>
-                                <SocialMediaItem>
-                                    <SocialMediaLink className="color-light" href="/">
-                                        <FaYoutube />
-                                    </SocialMediaLink>
-                                </SocialMediaItem>
-                                <SocialMediaItem>
-                                    <SocialMediaLink className="color-light" href="/">
-                                        <FaPinterestP />
-                                    </SocialMediaLink>
-                                </SocialMediaItem>
-                            </SocialMedia>
-                        </ChefSocialMediaWrapper>
-                        <span>
-                            <PrimaryText className="fw-bold">Gordon Ramsey</PrimaryText>
-                            <PrimaryText>Major Chef</PrimaryText>
-                        </span>
-                    </ChefSliderItem>
-                    <ChefSliderItem>
-                        <img src="https://cdn.pixabay.com/photo/2015/08/16/12/38/man-890885_960_720.jpg" alt="chef-img" className="img-fluid rounded" />
-                        <ChefSocialMediaWrapper>
-                            <SocialMedia>
-                                <SocialMediaItem>
-                                    <SocialMediaLink className="color-light" href="/">
-                                        <FaFacebookF />
-                                    </SocialMediaLink>
-                                </SocialMediaItem>
-                                <SocialMediaItem>
-                                    <SocialMediaLink className="color-light" href="/">
-                                        <FaInstagram />
-                                    </SocialMediaLink>
-                                </SocialMediaItem>
-                                <SocialMediaItem>
-                                    <SocialMediaLink className="color-light" href="/">
-                                        <FaYoutube />
-                                    </SocialMediaLink>
-                                </SocialMediaItem>
-                                <SocialMediaItem>
-                                    <SocialMediaLink className="color-light" href="/">
-                                        <FaPinterestP />
-                                    </SocialMediaLink>
-                                </SocialMediaItem>
-                            </SocialMedia>
-                        </ChefSocialMediaWrapper>
-                        <span>
-                            <PrimaryText className="fw-bold">Gordon Ramsey</PrimaryText>
-                            <PrimaryText>Major Chef</PrimaryText>
-                        </span>
-                    </ChefSliderItem>
+                        )))
+                    }
                 </Slider>
             </div>
         </ChefsWrapper>
     )
 }
 
-export default Chefs
+const mapStateToProps = state => {
+    return {
+        restaurant: state.restaurantReducers
+    }
+}
+
+const mapDispatchToProps = dispatch => {
+    return {
+        actions: {
+            getRestaurant: bindActionCreators(fetchRestaurantInfos, dispatch)
+        }
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Chefs)

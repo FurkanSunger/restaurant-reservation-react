@@ -1,8 +1,23 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import { bindActionCreators } from 'redux'
 import { LinkButton, SectionTitle } from '../CommonElements'
 import { Categories, CategoryItem, MenuItem, MenuItems, MenuPrice, MenuTitle, MenuWrapper } from './Menu.element'
+import { fetchRestaurantInfos } from '../../redux/actions/restaurantActions';
+import { connect } from 'react-redux';
+import { fetchMenu } from '../../redux/actions/menuActions';
 
-const Menu = () => {
+const Menu = (props) => {
+    useEffect(() => {
+        props.actions.getRestaurant();
+        props.actions.getMenu();
+    }, []);
+
+    const filterMenuItems = (e) => {
+        e.preventDefault();
+        const category = e.target.textContent.toLowerCase();
+        props.actions.getMenu(category);
+    }
+
     return (
         <MenuWrapper className="white-bg" id="menu">
             <div className="container primary-bg p-5">
@@ -11,30 +26,22 @@ const Menu = () => {
                         <SectionTitle className="secondary-font color-danger text-center">Let's Discover</SectionTitle>
                         <SectionTitle className="color-light text-center">OUR MENU</SectionTitle>
                         <Categories>
-                            <CategoryItem className="transparent-bg color-white">Main</CategoryItem>
-                            <CategoryItem className="transparent-bg color-white">Lunch</CategoryItem>
-                            <CategoryItem className="transparent-bg color-white">Dessert</CategoryItem>
-                            <CategoryItem className="transparent-bg color-white">Salad</CategoryItem>
-                            <CategoryItem className="transparent-bg color-white">Drink</CategoryItem>
+                            {
+                                props.restaurant.map(item => item.categories.map(category => (
+                                    <CategoryItem key={category.id} onClick={filterMenuItems} className="transparent-bg color-white">{category.name.toUpperCase()}</CategoryItem>
+                                )))
+                            }
                         </Categories>
                         <hr className="color-light" />
                         <MenuItems className="color-light">
-                            <MenuItem>
-                                <MenuTitle>Food Name</MenuTitle>
-                                <MenuPrice className="secondary-bg">$15</MenuPrice>
-                            </MenuItem>
-                            <MenuItem>
-                                <MenuTitle>Food Name</MenuTitle>
-                                <MenuPrice className="secondary-bg">$15</MenuPrice>
-                            </MenuItem>
-                            <MenuItem>
-                                <MenuTitle>Food Name</MenuTitle>
-                                <MenuPrice className="secondary-bg">$15</MenuPrice>
-                            </MenuItem>
-                            <MenuItem>
-                                <MenuTitle>Food Name</MenuTitle>
-                                <MenuPrice className="secondary-bg">$15</MenuPrice>
-                            </MenuItem>
+                            {
+                                props.menu.slice(0, 4).map(item => (
+                                    <MenuItem key={item.id}>
+                                        <MenuTitle>{item.name}</MenuTitle>
+                                        <MenuPrice className="secondary-bg">${item.price}</MenuPrice>
+                                    </MenuItem>
+                                ))
+                            }
                         </MenuItems>
                         <LinkButton to="/menu" className="danger-bg color-light">View More</LinkButton>
                     </div>
@@ -60,4 +67,20 @@ const Menu = () => {
     )
 }
 
-export default Menu
+const mapStateToProps = state => {
+    return {
+        restaurant: state.restaurantReducers,
+        menu: state.menuReducers
+    }
+}
+
+const mapDispatchToProps = dispatch => {
+    return {
+        actions: {
+            getRestaurant: bindActionCreators(fetchRestaurantInfos, dispatch),
+            getMenu: bindActionCreators(fetchMenu, dispatch)
+        }
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Menu)
