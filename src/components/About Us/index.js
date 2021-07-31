@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import { PrimaryText, SectionTitle } from '../CommonElements'
+import { LinkButton, PrimaryText, SectionTitle } from '../CommonElements'
 import aboutusImg from "../../images/aboutus-img.jpg";
 import { AboutUsWrapper } from './AboutUs.element';
 import { connect } from 'react-redux';
@@ -19,6 +19,7 @@ const AboutUs = (props) => {
                         <SectionTitle className="secondary-font color-danger">Welcome to Restaurant</SectionTitle>
                         <SectionTitle>OUR STORY</SectionTitle>
                         <PrimaryText className="my-4 color-primary">{props.restaurant.map(item => item.about)}</PrimaryText>
+                        <LinkButton to="/about" className={props.show ? "danger-bg color-light" : "d-none"}>View More</LinkButton>
                     </div>
                     <div className="col-lg-4">
                         <img className="img-fluid" src={aboutusImg} alt="aboutus-img" />

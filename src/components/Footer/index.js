@@ -4,6 +4,7 @@ import { HiMail } from "react-icons/hi";
 import { IoMdRestaurant } from "react-icons/io";
 import { Link } from 'react-router-dom'
 import { SocialMedia, SocialMediaItem, SocialMediaLink } from '../CommonElements'
+import footerLogo from "../../images/footer-logo.png";
 
 const Footer = () => {
     return (
@@ -39,12 +40,7 @@ const Footer = () => {
                 <div className="container text-center text-md-start mt-5">
                     <div className="row mt-3">
                         <div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-                            <h6 className="text-uppercase fw-bold mb-4 fs-1 text-center">
-                                <IoMdRestaurant />
-                            </h6>
-                            <p className="secondary-font fs-3 text-center">
-                                YUMMY FOODS
-                            </p>
+                            <img className="img-fluid" src={footerLogo} alt="footer-logo" />
                         </div>
                         <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
                             <h6 className="text-uppercase fw-bold mb-4">

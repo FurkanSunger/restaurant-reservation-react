@@ -17,7 +17,7 @@ const Navbar = (props) => {
 
     return (
         <NavbarWrapper className={bgColorChecker(background)}>
-            <NavLogo className="secondary-font color-white fs-1">Yummy Foods</NavLogo>
+            <NavLogo className="secondary-font color-white fs-1" href="/">Yummy Foods</NavLogo>
             <NavItems>
                 <NavItemLink to="/" className="color-white mx-3">Home</NavItemLink>
                 <NavItemLink to="/menu" className="color-white mx-3">Menu</NavItemLink>

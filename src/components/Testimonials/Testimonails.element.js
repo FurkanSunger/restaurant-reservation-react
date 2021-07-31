@@ -8,7 +8,7 @@ export const TestimonialsWrapper = styled.div`
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    padding: 45px 0;
+    padding: 75px 0;
 `;
 
 export const TestimonialsSliderWrapper = styled.div`

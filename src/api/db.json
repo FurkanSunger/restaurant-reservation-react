@@ -150,31 +150,31 @@
                     "id": 1,
                     "fullname": "David Hamilton",
                     "job": "Major Chef",
-                    "image": "https://cdn.pixabay.com/photo/2015/08/16/12/38/man-890885_960_720.jpg"
+                    "image": "https://images.unsplash.com/photo-1574966740793-953ad374e8fe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=334&q=80"
                 },
                 {
                     "id": 2,
-                    "fullname": "Ethel Shaw",
+                    "fullname": "Ethan Shaw",
                     "job": "Chef de Cuisine",
-                    "image": "https://cdn.pixabay.com/photo/2013/10/17/14/11/cook-196932_960_720.jpg"
+                    "image": "https://images.unsplash.com/photo-1581299894007-aaa50297cf16?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=334&q=80"
                 },
                 {
                     "id": 3,
                     "fullname": "Melissa Steeves",
                     "job": "Sous-Chef",
-                    "image": "https://cdn.pixabay.com/photo/2015/10/11/14/13/making-food-982410_960_720.jpg"
+                    "image": "https://images.unsplash.com/photo-1595257841889-eca2678454e2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80"
                 },
                 {
                     "id": 4,
                     "fullname": "Daniel Coleman",
                     "job": "Chef de Partie",
-                    "image": "https://cdn.pixabay.com/photo/2014/06/10/15/47/pizza-366111_960_720.jpg"
+                    "image": "https://images.unsplash.com/photo-1543716627-839b54c40519?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80"
                 },
                 {
                     "id": 5,
                     "fullname": "Nora Berry",
                     "job": "Major Chef",
-                    "image": "https://cdn.pixabay.com/photo/2020/11/19/16/43/chef-5759110_960_720.jpg"
+                    "image": "https://images.unsplash.com/photo-1565608087341-404b25492fee?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80"
                 }
             ],
             "testimonials": [

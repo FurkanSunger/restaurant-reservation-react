@@ -9,7 +9,12 @@ export const NavbarWrapper = styled.div`
     padding-bottom: 45px;
 `;
 
-export const NavLogo = styled.div``;
+export const NavLogo = styled.a`
+    text-decoration: none;
+    &:hover {
+        color: white;
+    }
+`;
 
 export const NavItems = styled.ul`
     display: flex;
