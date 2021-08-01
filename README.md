@@ -16,3 +16,11 @@
 + Fake Store API
 + EmailJS
 + Google Maps
+
+## Referances
++ Pixabay
++ Unsplash
++ Theme Forest
++ Google Fonts
++ Color Hunt
++ Adobe Spark
