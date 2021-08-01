@@ -7,18 +7,24 @@ import Chefs from '../components/Chefs';
 import Testimonials from '../components/Testimonials';
 import Reservation from '../components/Reservation';
 import Info from '../components/Info';
+import Fade from 'react-reveal/Fade';
+import LazyLoad from 'react-lazyload';
 
 const Home = () => {
     return (
         <>
-            <Header />
-            <AboutUs show="true" />
-            <DailySpecial />
-            <Menu />
-            <Chefs />
-            <Testimonials />
-            <Reservation />
-            <Info />
+            <LazyLoad once={true} overflow={true}>
+            <Fade bottom>
+                <Header />
+                <AboutUs show="true" />
+                <DailySpecial />
+                <Menu />
+                <Chefs />
+                <Testimonials />
+                <Reservation />
+                <Info />
+            </Fade>
+            </LazyLoad>
         </>
     )
 }

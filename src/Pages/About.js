@@ -4,6 +4,8 @@ import Chefs from '../components/Chefs'
 import Info from '../components/Info'
 import Navbar from '../components/Navbar'
 import Testimonials from '../components/Testimonials'
+import Fade from 'react-reveal/Fade';
+import LazyLoad from 'react-lazyload';
 
 const About = () => {
     return (
@@ -13,10 +15,14 @@ const About = () => {
                     <Navbar background="primary" />
                 </div>
             </div>
-            <AboutUs />
-            <Info />
-            <Chefs />
-            <Testimonials />
+            <LazyLoad once={true} overflow={true}>
+            <Fade bottom>
+                <AboutUs />
+                <Info />
+                <Chefs />
+                <Testimonials />
+            </Fade>
+            </LazyLoad>
         </>
     )
 }

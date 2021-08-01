@@ -3,6 +3,8 @@ import { Input, SectionTitle, TextArea } from '../components/CommonElements'
 import Navbar from '../components/Navbar'
 import { GrMail } from "react-icons/gr";
 import { FaPhoneAlt, FaMapMarker } from "react-icons/fa";
+import Fade from 'react-reveal/Fade';
+import LazyLoad from 'react-lazyload';
 
 const Contact = () => {
     return (
@@ -12,6 +14,8 @@ const Contact = () => {
                     <Navbar background="primary" />
                 </div>
             </div>
+            <LazyLoad once={true} overflow={true}>
+            <Fade bottom>
             <div className="container py-4">
                 <div className="row">
                     <div className="col-lg-6">
@@ -48,6 +52,8 @@ const Contact = () => {
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3193.3487494917626!2d34.61123691490761!3d36.83412287994158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1527f3e5fc3cb3bd%3A0x9518faae87d057c9!2zTWVyc2luLCDDh2HEn2RhxZ9rZW50LCAzMzIzMCBUb3Jvc2xhci9NZXJzaW4!5e0!3m2!1str!2str!4v1627737650890!5m2!1str!2str" width="600" height="450" loading="lazy"></iframe>
                 </div>
             </div>
+            </Fade>
+            </LazyLoad>
         </>
     )
 }

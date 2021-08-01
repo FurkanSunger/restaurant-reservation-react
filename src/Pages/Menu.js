@@ -5,6 +5,8 @@ import { Categories, CategoryItem, MenuPrice, MenuTitle } from '../components/Me
 import Navbar from '../components/Navbar'
 import { fetchMenu } from '../redux/actions/menuActions'
 import { fetchRestaurantInfos } from '../redux/actions/restaurantActions'
+import Fade from 'react-reveal/Fade';
+import LazyLoad from 'react-lazyload';
 
 const MenuPage = (props) => {
     
@@ -32,6 +34,8 @@ const MenuPage = (props) => {
                     <Navbar background="primary" />
                 </div>
             </div>
+            <LazyLoad once={true} overflow={true}>
+            <Fade bottom>
             <div className="container py-4">
                 <Categories>
                     <CategoryItem className="transparent-bg color-primary fs-5 fw-bold" onClick={filterMenuItems} >All</CategoryItem>
@@ -43,15 +47,19 @@ const MenuPage = (props) => {
                 <div className="row row-cols-lg-4 row-cols-md-4 row-cols-sm-2 row-cols-1 g-3">
                     {
                         props.menu.map(item => (
-                            <div className="col border rounded p-0 text-center" key={item.id}>
+                            <Fade key={item.id}>
+                            <div className="col border rounded p-0 text-center">
                                 <img className="img-fluid rounded mb-3" src={item.image} alt="menu-item-img" />
                                 <MenuTitle>{item.name}</MenuTitle>
                                 <MenuPrice>${item.price}</MenuPrice>
                             </div>
+                            </Fade>
                         ))
                     }
                 </div>
             </div>
+            </Fade>
+            </LazyLoad>
         </>
     )
 }
