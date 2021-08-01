@@ -1,11 +1,12 @@
-import React from 'react'
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
-import Footer from './components/Footer'
-import TopMenu from './components/Top Menu'
-import About from './Pages/About'
-import Contact from './Pages/Contact'
-import Home from './Pages/Home'
-import MenuPage from './Pages/Menu'
+import React from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Footer from "./components/Footer";
+import TopMenu from "./components/Top Menu";
+import About from "./Pages/About";
+import Contact from "./Pages/Contact";
+import Home from "./Pages/Home";
+import MenuPage from "./Pages/Menu";
+import NotFound from "./Pages/NotFound";
 
 const App = () => {
   return (
@@ -17,11 +18,12 @@ const App = () => {
           <Route exact path="/menu" component={MenuPage} />
           <Route exact path="/about" component={About} />
           <Route exact path="/contact" component={Contact} />
+          <Route component={NotFound} />
         </Switch>
         <Footer />
       </Router>
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;

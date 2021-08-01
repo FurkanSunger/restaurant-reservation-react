@@ -1,75 +1,75 @@
-@import "~slick-carousel/slick/slick.css"; 
+@import "~slick-carousel/slick/slick.css";
 @import "~slick-carousel/slick/slick-theme.css";
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
-:root{
-    --primary-color: #4A3933;
-    --secondary-color: #F0A500;
-    --danger-color: #E45826;
-    --light-color: #E6D5B8;
+:root {
+  --primary-color: #4a3933;
+  --secondary-color: #f0a500;
+  --danger-color: #e45826;
+  --light-color: #e6d5b8;
 }
 
 .primary-font {
-    font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 .secondary-font {
-    font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
 }
 
-.primary-bg{
-    background-color: var(--primary-color);
+.primary-bg {
+  background-color: var(--primary-color);
 }
 
-.secondary-bg{
-    background-color: var(--secondary-color);
+.secondary-bg {
+  background-color: var(--secondary-color);
 }
 
-.danger-bg{
-    background-color: var(--danger-color);
+.danger-bg {
+  background-color: var(--danger-color);
 }
 
-.light-bg{
-    background-color: var(--light-color);
+.light-bg {
+  background-color: var(--light-color);
 }
 
-.white-bg{
-    background-color: white;
+.white-bg {
+  background-color: white;
 }
 
-.transparent-bg{
-    background-color: transparent;
+.transparent-bg {
+  background-color: transparent;
 }
 
-.color-primary{
-    color: var(--primary-color);
+.color-primary {
+  color: var(--primary-color);
 }
 
-.color-secondary{
-    color: var(--secondary-color);
+.color-secondary {
+  color: var(--secondary-color);
 }
 
-.color-danger{
-    color: var(--danger-color);
+.color-danger {
+  color: var(--danger-color);
 }
 
-.color-light{
-    color: var(--light-color);
+.color-light {
+  color: var(--light-color);
 }
 
-.color-white{
-    color: #ffffff;
+.color-white {
+  color: #ffffff;
 }
 
-.color-dark{
-    color: #000000;
+.color-dark {
+  color: #000000;
 }

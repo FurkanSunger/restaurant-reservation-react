@@ -3,8 +3,8 @@ import menuReducers from "./menuReducers";
 import restaurantReducers from "./restaurantReducers";
 
 const rootReducer = combineReducers({
-    menuReducers,
-    restaurantReducers
-})
+  menuReducers,
+  restaurantReducers,
+});
 
 export default rootReducer;
