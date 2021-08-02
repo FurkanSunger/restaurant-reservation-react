@@ -9,7 +9,7 @@ export const getMenu = (menuItems) => {
 
 export const fetchMenu = (category) => {
   return function (dispatch) {
-    let url = "http://localhost:3004/menu";
+    let url = "https://my-json-server.typicode.com/FurkanSunger/restaurant-db/menu";
 
     if (category) {
       url = url + "?category=" + category;

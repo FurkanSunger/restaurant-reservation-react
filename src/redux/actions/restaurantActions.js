@@ -9,7 +9,7 @@ export const getRestaurantInfos = (restaurantInfos) => {
 
 export const fetchRestaurantInfos = () => {
   return function (dispatch) {
-    let url = "http://localhost:3004/restaurant";
+    let url = "https://my-json-server.typicode.com/FurkanSunger/restaurant-db/restaurant";
 
     return fetch(url)
       .then((response) => response.json())
