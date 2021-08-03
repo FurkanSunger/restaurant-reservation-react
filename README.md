@@ -1,6 +1,6 @@
 ## Live Demo
 
-### Loading
+https://yf-restaurant.netlify.app
 
 ## Used Technologies
 + React
