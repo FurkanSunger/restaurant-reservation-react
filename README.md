@@ -3,7 +3,6 @@
 https://yf-restaurant.netlify.app
 
 ## Technologies
-+ React
 + React Redux
 + React Router Dom
 + React Icons
@@ -13,7 +12,6 @@ https://yf-restaurant.netlify.app
 + React Reveal
 + Json Server
 + Bootstrap
-+ Fake Store API
 + EmailJS
 + Google Maps
 
