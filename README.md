@@ -2,7 +2,7 @@
 
 https://yf-restaurant.netlify.app
 
-## Used Technologies
+## Technologies
 + React
 + React Redux
 + React Router Dom
