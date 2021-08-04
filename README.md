@@ -1,9 +1,8 @@
 ## Live Demo
 
-### Loading
+https://yf-restaurant.netlify.app
 
-## Used Technologies
-+ React
+## Technologies
 + React Redux
 + React Router Dom
 + React Icons
@@ -13,7 +12,6 @@
 + React Reveal
 + Json Server
 + Bootstrap
-+ Fake Store API
 + EmailJS
 + Google Maps
 
